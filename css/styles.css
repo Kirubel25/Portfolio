@@ -1,0 +1,254 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff; /* Light off-white background */
+    color: #333;
+}
+
+/* Container to control page width */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+}
+
+
+.logo a {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: auto;  /* Align links to the right */
+}
+
+
+.nav-links li {
+    margin-left: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+.navbar .contact-button {
+    background-color: #6b3fd4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 2rem; /* Adjust spacing between nav links and contact button */
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    background-color: #6b3fd4;
+}
+
+/* Hero section with gradient background */
+/* Hero section with gradient background focused on the right side */
+.hero-bg {
+    padding: 120px 0;
+    background: linear-gradient(to right, #fff 70%, rgba(125, 75, 241, 0.1) 85%, rgba(135, 206, 250, 0.2) 100%);
+}
+
+
+/* Hero layout */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hero text styling */
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero-button {
+    background-color: #7D4BF1;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #6b3fd4;
+}
+
+/* Hero stats */
+.hero-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.stat-button {
+    text-align: center;
+    background-color: #EDD8FF;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.stat-button h3 {
+    font-size: 1.8rem;
+    color: #7D4BF1;
+}
+
+.stat-button p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Hero image */
+.hero-image img {
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+    }
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-content {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.portfolio-content p:first-child {
+    color: #7D4BF1;
+    font-size: 0.9rem;
+}
+
+.portfolio-content h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.portfolio-content p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.case-study-btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.case-study-btn:hover {
+    background-color: #7D4BF1;
+}
+
+.more-projects {
+    text-align: center;
+}
+
+.more-projects-btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #7D4BF1;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.more-projects-btn:hover {
+    background-color: #7D4BF1;
+}
+
