@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero Page</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <!-- Navbar -->
@@ -14,9 +16,9 @@
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="indexPr.html">Prac</a></li>
         </ul>
         <a href="#" class="contact-button">Contact</a>
     </nav>
@@ -25,7 +27,7 @@
     <section class="hero-bg">
         <div class="container hero">
             <div class="hero-text">
-                <h1>Hello, I'm <br> Brooklyn Gilbert</h1>
+                <h1>Hello, I'm <br> Kirubel From Code Lab Academy</h1>
                 <p>I'm a Freelance UX/UI Designer and Developer based in London, England. I strive to build immersive and beautiful web applications through carefully crafted code and user-centric design.</p>
                 <button class="hero-button">Say Hello!</button>
                 <div class="hero-stats">
@@ -44,10 +46,39 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="assets/images/person.png" alt="Hero Image">
+                <img src="assets/images/person.jpg" alt="Hero Image">
             </div>
         </div>
     </section>
+
+    <!-- About  -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/person.jpg" alt="About Me">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        Hi, I'm Brooklyn Gilbert, a passionate UI/UX Designer and Developer based in London, England.
+                        With over 15 years of experience, I've worked on various projects, including product dashboards, 
+                        mobile applications, and immersive web designs.
+                    </p>
+                    <p>
+                        I aim to create meaningful user experiences through well-crafted, intuitive, and user-centric 
+                        design solutions. Whether it's a complete redesign or an innovative new web application, 
+                        I’m always excited to tackle new challenges!
+                    </p>
+                    <p>
+                        Feel free to explore my portfolio or get in touch for collaboration.
+                    </p>
+                    <a href="#portfolio" class="btn-primary">View Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- portfolio section -->
     <section id="portfolio" class="portfolio-section">
@@ -94,32 +125,103 @@
                         <a href="#" class="case-study-btn">Case Study</a>
                     </div>
                 </div>
-    
-                <div class="portfolio-item">
-                    <img src="assets/images/portfoloio.png" alt="Portfolio Image">
-                    <div class="portfolio-content">
-                        <p>UI / UX Design</p>
-                        <h3>Product Admin Dashboard</h3>
-                        <p>Vivamus eleifend convallis enim, non pharetra libero malesuada laoreet. Donec id imperdiet lacus.</p>
-                        <a href="#" class="case-study-btn">Case Study</a>
-                    </div>
-                </div>
-    
-                <div class="portfolio-item">
-                    <img src="assets/images/portfoloio.png" alt="Portfolio Image">
-                    <div class="portfolio-content">
-                        <p>UI / UX Design</p>
-                        <h3>Product Admin Dashboard</h3>
-                        <p>Vivamus eleifend convallis enim, non pharetra libero malesuada laoreet. Donec id imperdiet lacus.</p>
-                        <a href="#" class="case-study-btn">Case Study</a>
-                    </div>
-                </div>
             </div>
             <div class="more-projects">
                 <a href="#" class="more-projects-btn">More Project</a>
             </div>
         </div>
     </section>
+    
+    <!-- contact -->
+
+    <section id="contact" class="contact-section">
+        <div class="container container-bg">
+            <div class="contact-header">
+                <h2>Let’s discuss your Project</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Left Contact Info -->
+                <div class="contact-info">
+                    <div class="info-box">
+                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <p><strong>Address:</strong><br> New Mexico 31134</p>
+                    </div>
+                    <div class="info-box">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <p><strong>My Email:</strong><br> mymail@mail.com</p>
+                    </div>
+                    <div class="info-box">
+                        <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                        <p><strong>Call Me Now:</strong><br> 00-1234 00000</p>
+                    </div>
+    
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Right Contact Form -->
+                <div class="contact-form">
+                    <form action="submit_contact.php" method="POST">
+                        <div class="input-group">
+                            <input type="text" id="name" name="name" placeholder="Name*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" placeholder="Email*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="location" name="location" placeholder="Location">
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <input type="text" id="budget" name="budget" placeholder="Budget*" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject*" required>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Message*" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Submit <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">CodeLab</a>
+                </div>
+                <div class="footer-info">
+                    <ul>
+                        <li><strong>Email:</strong> codelab@gmail.com</li>
+                        <li><strong>Phone:</strong> +251 9456 7890</li>
+                        <li><strong>Address:</strong> 123 Main St, London, England</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeLab Gilbert. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>

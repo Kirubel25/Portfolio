@@ -162,6 +162,63 @@ body {
     }
 }
 
+
+/* About Me Section */
+.about-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 450px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.about-text .btn-primary {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #6a00ff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.about-text .btn-primary:hover {
+    background-color: #4500b8;
+}
+
+
 /* Portfolio Section */
 .portfolio-section {
     padding: 5rem 0;
@@ -251,4 +308,196 @@ body {
 .more-projects-btn:hover {
     background-color: #7D4BF1;
 }
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+.container-bg {
+    padding: 4rem;
+    background-color: #ffffff;
+    box-shadow: #333;
+}
+.contact-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #212529;
+    text-align: center;
+}
+
+.contact-header p {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 300px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.info-box .icon {
+    font-size: 1.5rem;
+    color: #6a00ff;
+    margin-right: 1rem;
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.social-icons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: #6a00ff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #4500b8;
+}
+
+.contact-form {
+    flex: 2;
+    max-width: 600px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.btn-primary {
+    padding: 0.75rem 2rem;
+    background-color: #6a00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-primary i {
+    margin-left: 0.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #4500b8;
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+}
+
+.footer-logo a {
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-info ul li {
+    color: #bbb;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-info ul li strong {
+    color: #fff;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social a {
+    color: #bbb;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #7D4BF1;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin: 0;
+}
+
 
